@@ -44,3 +44,14 @@ The following packages were added:
   com.unity.textmeshpro@3.0.4
   com.unity.timeline@1.4.6
   com.unity.ugui@1.0.0
+
+=== Sun Apr 25 16:50:32 2021
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.ads@2.0.8
+  com.unity.analytics@3.2.2
+  com.unity.package-manager-ui@2.0.7
+  com.unity.purchasing@2.0.3
