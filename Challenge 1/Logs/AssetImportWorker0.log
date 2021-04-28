@@ -555,3 +555,4 @@ Received Import Request.
 Start importing Assets/Challenge 1/Scripts/FollowPlayerX.cs using Guid(573453567e55b468d959b66ab676a102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a99d9e464810bcc5f3f1359ede61982') in 0.003304 seconds
   Import took 0.013857 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

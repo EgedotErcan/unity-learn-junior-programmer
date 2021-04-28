@@ -71,3 +71,11 @@ The following packages were updated:
   com.unity.purchasing from version 2.0.3 to 2.2.2
 The following packages were removed:
   com.unity.package-manager-ui@2.0.7
+
+=== Wed Apr 28 16:40:27 2021
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.package-manager-ui@2.0.7
