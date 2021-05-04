@@ -4,25 +4,33 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float leftRightSpeed = 10f;
-    public float xRange = 12f;
-
+    private float leftRightSpeed = 10f;
+    private float xRange = 12f;
     private float horizontalInput;
 
-    // Start is called before the first frame update
+    public GameObject prjectilePrefab;
+
+    
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
         MovePlayerInBoundary();
-
+        InstantiateObject();
     }
 
+    //Launch a projectile from the player 
+    private void InstantiateObject()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(prjectilePrefab, transform.position, prjectilePrefab.transform.rotation);
+        }
+    }
     //Keep the player in boundary
     private void MovePlayerInBoundary()
     {
