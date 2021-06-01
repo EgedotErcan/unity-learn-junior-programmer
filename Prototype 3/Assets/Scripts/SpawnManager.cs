@@ -9,8 +9,8 @@ public class SpawnManager : MonoBehaviour
     private Vector3 spawnPos = new Vector3(23f,0f,0f);
     private float spawnInterval;
     private float timer;
-    private float minInterval= 1.1f;
-    private float maxInterval = 1.3f;
+    private float minInterval= 1.3f;
+    private float maxInterval = 1.5f;
 
 
     void Start()
