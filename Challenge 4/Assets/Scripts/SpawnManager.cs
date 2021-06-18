@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject enemyPrefab;
     public GameObject player;
-    public GameObject powerUpPrefab;
+    public GameObject[] powerUpPrefabs;
     public int waveNumber;
     public int enemyCount;
     // Start is called before the first frame update
@@ -32,7 +32,8 @@ public class SpawnManager : MonoBehaviour
     {
         if (GameObject.FindGameObjectsWithTag("PowerUp").Length == 0)
         {
-            Instantiate(powerUpPrefab, GenerateSpawnPos(0) - new Vector3(0f, 0f, 15f), powerUpPrefab.transform.rotation);
+            int randomIndex = Random.Range(0, powerUpPrefabs.Length);
+            Instantiate(powerUpPrefabs[randomIndex], GenerateSpawnPos(0) - new Vector3(0f, 0f, 15f), powerUpPrefabs[randomIndex].transform.rotation);
         }
 
         for (int i = 0; i < enemiesToSpawn; i++)
@@ -46,7 +47,6 @@ public class SpawnManager : MonoBehaviour
     private void ResetPlayerPosition()
     {
         player.transform.position = new Vector3(0f, 0f, -7f);
-        player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 

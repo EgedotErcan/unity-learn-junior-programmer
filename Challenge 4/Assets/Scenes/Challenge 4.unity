@@ -447,8 +447,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f17fac1454e3248b013571b5cdabb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPowerUpType: 0
+  explosionRadius: 20
+  explosionForce: 30
+  smashSpeed: 30
+  hangTime: 0.1
   playerSpeed: 600
   turboBoost: 10
+  rocket: {fileID: 6862259533710152851, guid: 5044eeb324eec4f4a8280d4cfa0496ee, type: 3}
   powerUpIndicator: {fileID: 1427939658}
   smokeParticle: {fileID: 1310013128}
   hasPowerUp: 0
@@ -1147,7 +1153,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8932280921958007952, guid: 47045ccb8f3944b9b8a55f6b07f0aefc, type: 3}
   player: {fileID: 583048338}
-  powerUpPrefab: {fileID: 4446131693967519089, guid: c5497424856514b2ba61b78375567988, type: 3}
+  powerUpPrefabs:
+  - {fileID: 4446131693967519089, guid: c5497424856514b2ba61b78375567988, type: 3}
+  - {fileID: 4446131693967519089, guid: d9b5a8bd0564f9849ba4ed61d0a09987, type: 3}
+  - {fileID: 4446131693967519089, guid: 0ee183c1653a31a4c909d53e227a329c, type: 3}
   waveNumber: 1
   enemyCount: 0
 --- !u!4 &1355396478
@@ -1157,7 +1166,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355396476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
